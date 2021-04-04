@@ -31,7 +31,7 @@ class ChatPacket implements Packet
             [
                 'm' => $this->message,
                 'mc' => $this->color,
-                'i' => uniqid($this->message)
+                'i' => mt_rand(100000000000,999999999999)
             ]
         );
     }

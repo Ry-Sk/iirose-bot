@@ -39,7 +39,7 @@ class PersonChatPacket implements Packet
                 'g' => $this->user_id,
                 'm' => $this->message,
                 'mc' => $this->color,
-                'i' => uniqid($this->message)
+                'i' => mt_rand(100000000000,999999999999)
             ]
         );
     }
