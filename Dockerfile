@@ -38,6 +38,6 @@ RUN apt-get update && apt-get install -y build-essential curl git python libglib
     apt purge build-essential git python  -y && \
     apt-get autoremove --purge -y  && \
     apt-get clean -y && \
-    rm -rf /tmp/* /usr/local/v8
+    rm -rf /tmp/*
 ENTRYPOINT [ "/bin/bash" ]
 ENV PS1="\h:\w\$ "
